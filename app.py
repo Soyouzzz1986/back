@@ -7,6 +7,7 @@ import json
 import sklearn as sk
 import xgboost
 import imblearn
+import gunicorn
 
 # Chargements des données
 clf = joblib.load('xgb_60k.joblib')
@@ -41,3 +42,5 @@ def sk_ids():
 
 
 ######################### Execution de l'application #########################
+if __name__ == "__main__":
+        app.run()
