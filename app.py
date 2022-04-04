@@ -41,6 +41,3 @@ def sk_ids():
 
 
 ######################### Execution de l'application #########################
-    
-if __name__ == '__main__':
-    app.run()
